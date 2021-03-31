@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://ListItem.cs" type="Script" id=1]
+[ext_resource path="res://ItemSpinBox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/fonts/Roboto-Bold.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 15
+font_data = ExtResource( 3 )
+
+[node name="ListItem" type="HBoxContainer" groups=[
+"listItem",
+]]
+margin_left = -1.33484
+margin_right = 978.665
+margin_bottom = 115.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NameAndPrice" type="RichTextLabel" parent="."]
+margin_top = 17.0
+margin_right = 100.0
+margin_bottom = 97.0
+rect_min_size = Vector2( 100, 40 )
+size_flags_vertical = 4
+custom_fonts/bold_font = SubResource( 4 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "[center]
+Generic Item
+[b]Cost: $3[/b]
+[/center]"
+text = "
+Generic Item
+Cost: $3
+"
+fit_content_height = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemSpinBox" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 104.0
+margin_top = 29.0
+margin_right = 241.0
+margin_bottom = 84.0
+
+[node name="TotalPrice" type="Label" parent="."]
+margin_left = 245.0
+margin_top = 48.0
+margin_right = 345.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 100, 0 )
+custom_fonts/font = SubResource( 3 )
+text = "Total: $0"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true,
+"_editor_description_": ""
+}
