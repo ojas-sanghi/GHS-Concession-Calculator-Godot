@@ -1,14 +1,14 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://ListItem.cs" type="Script" id=1]
-[ext_resource path="res://ItemSpinBox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/ListItem.cs" type="Script" id=1]
+[ext_resource path="res://src/ItemSpinBox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://assets/fonts/Roboto-Bold.ttf" type="DynamicFontData" id=4]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -18,9 +18,11 @@ font_data = ExtResource( 3 )
 [node name="ListItem" type="HBoxContainer" groups=[
 "listItem",
 ]]
+anchor_right = 0.906
+anchor_bottom = 0.06
 margin_left = -1.33484
-margin_right = 978.665
-margin_bottom = 115.0
+margin_right = 0.184937
+margin_bottom = -0.200005
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -32,8 +34,8 @@ margin_right = 100.0
 margin_bottom = 97.0
 rect_min_size = Vector2( 100, 40 )
 size_flags_vertical = 4
-custom_fonts/bold_font = SubResource( 4 )
-custom_fonts/normal_font = SubResource( 5 )
+custom_fonts/bold_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
 bbcode_enabled = true
 bbcode_text = "[center]
 Generic Item
@@ -53,9 +55,9 @@ __meta__ = {
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 104.0
-margin_top = 29.0
+margin_top = 30.0
 margin_right = 241.0
-margin_bottom = 84.0
+margin_bottom = 85.0
 
 [node name="TotalPrice" type="Label" parent="."]
 margin_left = 245.0

@@ -1,18 +1,18 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://ListItem.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Total.cs" type="Script" id=3]
+[ext_resource path="res://src/ListItem.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Total.cs" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 30
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 30
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=1]
 size = 50
 font_data = ExtResource( 1 )
 
@@ -44,13 +44,16 @@ margin_bottom = 2367.0
 custom_constants/separation = 15
 
 [node name="ListItem24" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_right = 345.0
 margin_bottom = 80.0
 itemName = "Small Drink"
-price = 1.0
 
 [node name="ListItem23" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 95.0
 margin_right = 345.0
@@ -59,6 +62,8 @@ itemName = "Sweet Tea"
 price = 1.5
 
 [node name="ListItem" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 190.0
 margin_right = 345.0
@@ -67,6 +72,8 @@ itemName = "Drink"
 price = 2.0
 
 [node name="ListItem2" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 285.0
 margin_right = 345.0
@@ -75,6 +82,8 @@ itemName = "Water"
 price = 1.5
 
 [node name="ListItem3" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 380.0
 margin_right = 345.0
@@ -83,6 +92,8 @@ itemName = "Sausage on a Stick"
 price = 3.0
 
 [node name="ListItem4" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 475.0
 margin_right = 345.0
@@ -91,6 +102,8 @@ itemName = "Nachos"
 price = 2.5
 
 [node name="ListItem5" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 570.0
 margin_right = 345.0
@@ -99,6 +112,8 @@ itemName = "Nachos w/ chili"
 price = 3.0
 
 [node name="ListItem6" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 665.0
 margin_right = 345.0
@@ -107,6 +122,8 @@ itemName = "Plain Hot Dog"
 price = 1.5
 
 [node name="ListItem7" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 760.0
 margin_right = 345.0
@@ -115,6 +132,8 @@ itemName = "Hot Dog w/ cheese"
 price = 2.0
 
 [node name="ListItem8" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 855.0
 margin_right = 345.0
@@ -123,6 +142,8 @@ itemName = "Hot Dog w/ chili & cheese"
 price = 2.25
 
 [node name="ListItem9" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 950.0
 margin_right = 345.0
@@ -131,6 +152,8 @@ itemName = "Frito Pie"
 price = 3.0
 
 [node name="ListItem10" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1045.0
 margin_right = 345.0
@@ -139,6 +162,8 @@ itemName = "Hamburger"
 price = 4.5
 
 [node name="ListItem11" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1140.0
 margin_right = 345.0
@@ -147,6 +172,8 @@ itemName = "Cheeseburger"
 price = 5.0
 
 [node name="ListItem12" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1235.0
 margin_right = 345.0
@@ -155,6 +182,8 @@ itemName = "Hamburger, Drink, Chips"
 price = 6.5
 
 [node name="ListItem13" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1330.0
 margin_right = 345.0
@@ -163,6 +192,8 @@ itemName = "Cheeseburger, Drink, Chips"
 price = 7.0
 
 [node name="ListItem14" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1425.0
 margin_right = 345.0
@@ -171,6 +202,8 @@ itemName = "2 Plain Hot Dogs, Drink, Chips"
 price = 5.0
 
 [node name="ListItem15" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1520.0
 margin_right = 345.0
@@ -179,6 +212,8 @@ itemName = "2 Hot Dogs w/ chili and/or cheese, Drink, Chips"
 price = 7.0
 
 [node name="ListItem16" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1615.0
 margin_right = 345.0
@@ -187,6 +222,8 @@ itemName = "Popcorn"
 price = 2.0
 
 [node name="ListItem17" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1710.0
 margin_right = 345.0
@@ -195,14 +232,17 @@ itemName = "Chips"
 price = 0.5
 
 [node name="ListItem18" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1805.0
 margin_right = 345.0
 margin_bottom = 1885.0
 itemName = "Chocolate Candy"
-price = 1.0
 
 [node name="ListItem19" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1900.0
 margin_right = 345.0
@@ -211,6 +251,8 @@ itemName = "Pickles"
 price = 0.75
 
 [node name="ListItem20" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 1995.0
 margin_right = 345.0
@@ -219,6 +261,8 @@ itemName = "Pickle Pops"
 price = 0.25
 
 [node name="ListItem21" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 2090.0
 margin_right = 345.0
@@ -227,6 +271,8 @@ itemName = "Icees"
 price = 0.5
 
 [node name="ListItem22" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 0.0
 margin_top = 2185.0
 margin_right = 345.0
@@ -238,7 +284,7 @@ price = 2.0
 margin_top = 2280.0
 margin_right = 345.0
 margin_bottom = 2316.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "-----------------------------------------------------------------------------------------------------------------------------------------------"
 clip_text = true
 
@@ -246,7 +292,7 @@ clip_text = true
 margin_top = 2331.0
 margin_right = 345.0
 margin_bottom = 2367.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Total: $0"
 align = 2
 script = ExtResource( 3 )
@@ -260,7 +306,7 @@ margin_left = -0.440018
 margin_top = -0.600002
 margin_right = 0.119995
 margin_bottom = -0.12001
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "GHS Concession Calculator"
 __meta__ = {
 "_edit_use_anchors_": false
