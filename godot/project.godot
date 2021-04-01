@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="ConcessionCalculator"
-run/main_scene="res://Home.tscn"
+run/main_scene="res://src/Home.tscn"
 config/icon="res://icon.png"
 
 [display]
